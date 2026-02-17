@@ -24,8 +24,7 @@ html {
 }
 
 a:focus-visible {
-	outline: 3px solid var(--color-accent);
-	outline-offset: 3px;
+	box-shadow: 0 0 0 3px var(--color-accent);
 }
 
 /********************/
@@ -87,7 +86,7 @@ header {
 
 	.tabs > .selected_tab {
 		box-shadow: inset 0 0 4px 4px var(--color-bg-main-fade);
-		outline: 3px solid var(--color-bg-main);
+		border: 3px solid var(--color-bg-main);
 		border-radius: 15px;
 		background-color: var(--color-bg-dark);
 		color: var(--color-accent) !important;
@@ -102,7 +101,7 @@ header {
 		justify-content: center;
 		align-items: center;
 		box-shadow: inset 0 0 4px 4px var(--color-bg-main-fade);
-		outline: 3px solid var(--color-bg-main);
+		border: 3px solid var(--color-bg-main);
 		border-radius: 15px;
 		background-color: var(--color-bg-dark);
 		font-family: Arial, sans-serif;
@@ -137,8 +136,7 @@ header {
 	}
 
 	.tabs a:focus-visible {
-		outline: 3px solid var(--color-accent);
-		outline-offset: 3px;
+		box-shadow: 0 0 0 3px var(--color-accent);
 		background-color: var(--color-bg-alt);
 		box-shadow: 0 0 0 4px var(--color-bg-main), 0 0 10px 4px rgba(255, 255, 0, 0.6);
 		transform: scale(1.15);
@@ -167,7 +165,7 @@ nav {
 	width: 300px;
 	padding: 10px 10px 5px 10px;
 	background-color: var(--color-fg-medium);
-	outline: 10px solid var(--color-bg-main);
+	border: 10px solid var(--color-bg-main);
 	border-radius: 15px;
 }
 
@@ -269,7 +267,7 @@ nav {
 	object-fit: contain;
 	object-position: center;
 	background-color: black;
-	outline: 2px solid black;
+	border: 2px solid black;
 	cursor: pointer;
 }
 
@@ -307,7 +305,7 @@ main {
 	padding: 20px 30px 20px 30px;
 	margin: 0;
 	flex: 1;
-	outline: 10px solid var(--color-bg-main);
+	border: 10px solid var(--color-bg-main);
 	border-radius: 15px;
 	background-color: var(--color-fg-light);
 }
